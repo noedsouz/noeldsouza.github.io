@@ -1,20 +1,49 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Noel Dsouza Site</title>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <title>Noel Dsouza</title>
+  <style>
+    body {
+      font-family: Arial;
+      margin: 40px;
+      background: #f4f6f8;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+    }
+  </style>
 </head>
 <body>
 
-<div id="content">Loading...</div>
+<div class="card">
+  <h1>Hi there 👋</h1>
 
-<script>
-fetch('README.md')
-  .then(response => response.text())
-  .then(text => {
-    document.getElementById('content').innerHTML = marked.parse(text);
-  });
-</script>
+  <p><strong>Name:</strong> Noel Dsouza</p>
+  <p><strong>Location:</strong> Bangalore, India</p>
+
+  <h3>💼 Role</h3>
+  <p>ACS Support Team Lead, DB Management, IBM Cloud</p>
+  <p>DB Products: DB2OC, DB2WOC, PostgreSQL, MongoDB, Redis, MySQL, Elasticsearch, EDB</p>
+
+  <h3>⏰ Work Schedule</h3>
+  <p>Sunday to Thursday, 7:00 AM – 4:00 PM</p>
+
+  <h3>🌱 Currently Learning</h3>
+  <p>Cloudant (Achilles' heel 🙂)</p>
+
+  <h3>💬 Ask me about</h3>
+  <p>Anything – I’ll help or learn with you!</p>
+
+  <h3>⚡ Fun Fact</h3>
+  <p>Clouds can weigh over a million pounds ☁️</p>
+</div>
 
 </body>
 </html>
